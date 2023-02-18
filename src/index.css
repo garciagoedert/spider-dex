@@ -1,3 +1,175 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.search-div {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 20px;
+  width: 300px;
+}
+
+#search-bar {
+  margin-left: 15px;
+  padding: 3px;
+  font-size: 20px;
+  border: white;
+  appearance: none;
+  outline: none;
+}
+
+#search-button {
+  top: 10px;
+  left: 10px;
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#lupinha {
+  margin-top: 4px;
+  margin-bottom: 1px;
+}
+
+.logo-sm {
+  width: 10rem;
+}
+
+/* .bg-image {
+  background-repeat: no-repeat;
+  background-position: down;
+  background-size: cover;
+   background-image: url(https://images.pling.com/img/00/00/62/69/92/1744553/spider-man-fade-into-dust1.jpg);
+  background-attachment: fixed; 
+  height: 100%;
+} */
+
 body {
-background-color: #1a1924;
+  background-repeat: no-repeat;
+  background-position: down;
+  background-size: cover;
+   background-image: url(https://www.teahub.io/photos/full/29-293453_1920x1200-red-gradient-2-wallpaper-data-id-11742.jpg);
+   backdrop-filter: blur();
+  background-attachment: fixed; 
+  width: 100%;
+  height: 100%;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;;
+    color: white;
+    text-align: center;
+    /* background: linear-gradient(145deg, #2d3466, rgb(19, 22, 55)) no-repeat ;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.cards-board {
+  display: flex;
+  width: 100vw;
+  padding-bottom: 6vh;
+}
+
+
+.center {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    justify-content: center;
+    float: left;
+    width: 20%; 
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 3px;
+    margin-left: 50px;
+    background-color: blue;
+    background-blend-mode: multiply;
+    border-radius: 20px;
+background: linear-gradient(145deg, #415389, #374673);
+box-shadow:  5px 5px 3px #26304f,
+             -5px -5px 3px #546cb1;
+
+}
+
+
+.teste {
+    display: flex;
+    height: 9rem;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 20%; 
+    padding: 10px;
+    margin: 2rem;
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 20px;
+    box-shadow:  5px 5px 3px #26304f,
+             -5px -5px 3px #546cb1;
+
+}
+.teste:hover {   
+  transform: scale(1.02);
+  box-shadow: 0 0.25rem 1rem hsl(0, 0%, 88.6%);
+
+}
+
+.card-img-top {
+    height: 6rem;
+    width: 6rem;   
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  h4 {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  article {
+    width: 100vw;
+  }
+ 
+
+ footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  flex-wrap: nowrap;
+  text-align: center;
+  width: 100vh;
+ }
+
+ a {
+  color: grey ;
+  text-align: center;
+}
+
+p {
+  text-align: center;
 }

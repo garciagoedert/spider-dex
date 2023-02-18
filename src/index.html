@@ -1,30 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css"/>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script>
-        axios.get('localhost:8080/').then((res) =>{
-          console.log(res.data);
-        })
-    </script>
-    <title>Primeiro projeto marvel</title>
+    <title>SpiderDex</title>
 </head>
+
 <body>
+    <div class="bg-image"></div>
     <header>
-        // insert header
-        <form>
-            <label>
-                <input type="search">
-            </label>
-        <button type="submit"></button>
-        </form>
-        
+        <div>
+            <img src="https://logosmarcas.net/wp-content/uploads/2020/11/Spider-Man-Logo.png" class="logo-sm"/>
+        </div>
     </header>
+    <div class="search-container">
+        <div class="search-div">
+            <form>
+                <label>
+                    <input type="search" id="search-bar">
+                </label>
+                <button type="submit" id="search-button" onsubmit={}>
+                    <svg id="lupinha" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <article>   
+        <!-- automatically generated cards -->
+    </article>
+    <div class="cards-board">
+    </div>
+
     <footer>
-        // insert footer
+        <p>Este site foi desenvolvido por 
+            <a href="https://github.com/alifgithub/">Alefy Mikael</a>, 
+            <a href="https://github.com/garciapaulo95/">Paulo Garcia</a>, 
+            <a href="https://github.com/Rapos0thiag0/">Thiago Raposo</a> e 
+            <a href="https://github.com/sahdibernardi/">Sahra Di Bernardi</a>
+        .</p>
+        
+    
     </footer>
+    <script src="./JS/index.js"></script>
+  
+
 </body>
+
 </html>
