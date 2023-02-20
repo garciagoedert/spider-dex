@@ -62,7 +62,9 @@ body {
   background-repeat: no-repeat;
   background-position: down;
   background-size: cover;
-   background-image: url(https://www.teahub.io/photos/full/29-293453_1920x1200-red-gradient-2-wallpaper-data-id-11742.jpg);
+   /*background-image: url(https://www.teahub.io/photos/full/29-293453_1920x1200-red-gradient-2-wallpaper-data-id-11742.jpg);*/
+   background: rgb(121,9,9);
+background: radial-gradient(circle, rgba(121,9,9,1) 53%, rgba(2,0,36,1) 100%);
    backdrop-filter: blur();
   background-attachment: fixed; 
   width: 100%;
@@ -70,7 +72,7 @@ body {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;;
     color: white;
-    text-align: center;
+    text-align: down;
     /* background: linear-gradient(145deg, #2d3466, rgb(19, 22, 55)) no-repeat ;
     background-blend-mode: multiply;
     background-size: cover;
@@ -80,14 +82,14 @@ body {
   background-size: cover; */
 }
 
-.cards-board {
+/* .cards-board {
   display: flex;
   width: 100vw;
   padding-bottom: 6vh;
-}
+} */
 
 
-.center {
+/* .center {
     display: flex;
     width: 200px;
     height: 100px;
@@ -106,10 +108,10 @@ background: linear-gradient(145deg, #415389, #374673);
 box-shadow:  5px 5px 3px #26304f,
              -5px -5px 3px #546cb1;
 
-}
+} */
 
 
-.teste {
+/* .teste {
     display: flex;
     height: 9rem;
     margin: 2rem;
@@ -151,18 +153,21 @@ box-shadow:  5px 5px 3px #26304f,
 
   article {
     width: 100vw;
-  }
+  } */
  
 
  footer {
-  display: flex;
+  /*display: flex;
   justify-content: center;
-  position: absolute;
+  position: flex;
   bottom: 0;
   color: white;
   flex-wrap: nowrap;
   text-align: center;
-  width: 100vh;
+  width: 100vh; */
+  margin: 0 auto;
+  text-align: center;
+  width: 10%;
  }
 
  a {
@@ -172,4 +177,150 @@ box-shadow:  5px 5px 3px #26304f,
 
 p {
   text-align: center;
+}
+
+footer {
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+button {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+margin-top: auto;
+}
+
+button::before {
+  margin-left: auto;
+}
+
+button::after, button::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  transition: 0.5s;
+}
+
+button:hover::after, button:hover::before {
+  width: 100%;
+}
+
+/* button {
+  position: relative;
+  height: 50px;
+  padding: 0 30px;
+  border: 2px solid #000;
+  background: #e8e8e8;
+  user-select: none;
+  white-space: nowrap;
+  transition: all .05s linear;
+  font-family: inherit;
+ }
+ 
+ button:before, button:after {
+  content: "";
+  position: absolute;
+  background: #e8e8e8;
+  transition: all .2s linear;
+ }
+ 
+ button:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+ }
+ 
+ button:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+ }
+ 
+ button:hover {
+  cursor: ;
+ }
+ 
+ button:active {
+  transform: scale(0.95);
+ }
+ 
+ button:hover:before {
+  height: calc(100% - 32px);
+  top: 16px;
+ }
+ 
+ button:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+ }
+ 
+ button span {
+  font-size: 15px;
+  z-index: 3;
+  position: relative;
+  font-weight: 600;
+ } */
+
+
+/* AQUI EMBAIXO NOVO CARD */
+
+.cards-board {
+  box-sizing: border-box;
+  width: 190px;
+  height: 254px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+
+  display: flex;
+  width: 20vw;
+  padding-bottom: 6vh;
+
+  display: flex;
+  height: 15rem;
+  margin: 2rem;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 20%; 
+  padding: 10px;
+  margin: 2rem;
+
+  text-align: down;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: font-family: 'Montserrat', sans-serif;;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  
+  
+}
+
+.cards-board:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.cards-board:active {
+  transform: scale(0.95) rotateZ(1.7deg);
 }

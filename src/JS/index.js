@@ -21,7 +21,7 @@ function testeGetAPI() {
                         var apiData = data.data.results;
                         apiData.map((e) =>{
                             document.querySelector("article").innerHTML += `
-                            <section class="teste" style="background-image: url(${e.thumbnail.path}.${e.thumbnail.extension})">
+                            <section class="cards-board" style="background-image: url(${e.thumbnail.path}.${e.thumbnail.extension})">
                             <div> 
                             
                             <h4 >${e.name} </h4>
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     testeGetAPI();
 });
 
-// div id="card" class="center">
+// div id="cards-board" class="cards-board">
                             
 //                                 <img id="${e.id} "src=${e.thumbnail.path}.${e.thumbnail.extension} class="card-img-top" alt="personagem #"/>
                           
